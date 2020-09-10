@@ -1,0 +1,79 @@
+<div>
+	<script id="auctionBody" type="text/x-jquery-tmpl">
+		<div class="body currency_${source.data.tender.lot.value.currency}">
+			<div class="page">
+				<div class="inner">
+					<div class="langs clear">
+						<a href="javascript:;" class="lang" data-lang="ro" data-msg="lang ro" />
+						<a href="javascript:;" class="lang" data-lang="ru" data-msg="lang ru" />
+						<a href="javascript:;" class="lang" data-lang="en" data-msg="lang en" />
+					</div>
+					<div class="auctionTop">
+						<div class="clear mainInfo">
+							<div class="l">
+								<div class="line"><span class="name" data-msg="Launch Date"></span><span class="value">{{html startTimeString}}</span></div>
+								<div class="line"><span class="name" data-msg="Expected Cost"></span><span class="value">${number_format(source.data.tender.lot.value.amount,2,',',"'")}<span data-msg="currency"></span></span></div>
+								<div class="line"><span class="name" data-msg="Minimal Step"></span><span class="value">${number_format(source.data.tender.lot.minStep,2,',',"'")}<span data-msg="currency"></span></span></div>
+							</div>
+							<div class="r auctionStatus"><span data-msg></span></div>
+						</div>
+						<div class="clear tenderID">
+							<div class="l">
+								<div class="line"><span class="name" data-msg="Contracting Process ID"></span>: <span class="value">${tender_id}</span></div>
+							</div>
+							<div class="r auctionCounter" data-msg="Auction Start Countdown"></div>
+						</div>
+						<div class="clear tender">
+							<div class="l">
+								<div class="title"><span data-msg="tender tilte" />${source.data.tender.title}</div>
+								{{if source.data.tender.description}}<div class="descr">${source.data.tender.description}</div>{{/if}}
+							</div>
+							<div class="r auctionCounter timerCounters"></div>
+						</div>
+						<div class="lotInfo">
+							<div class="title"><span data-msg="lot tilte" />${source.data.tender.lot.title}</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div id="auctionsSteps" />
+		</div>
+	</script>
+	<script id="auctionsStepsTpl" type="text/x-jquery-tmpl">
+		<div class="page relative bidSteps bidStep_${index}" data-round-index="${index}">
+			<div class="inner">
+				<div class="bigTitle" data-msg="round title ${index}"></div>
+				<div class="clear roundTimeline">
+					<div class="roundTitle l"><span data-msg="round"></span>${index}</div>
+					<div class="r clear">
+						<div class="l status"><span data-msg="round status"></span></div>
+						<div class="l timeLine relative"><div class="inner"><div class="dynamic"></div></div></div>
+						<div class="r timerCounters"></div>
+					</div>
+				</div>
+				<div class="bidders">
+					<div class="line clear lineHead">
+						<div class="bidder l"><span data-msg="bidder name"></span></div>
+						<div class="value l"><span data-msg="bidder value"></span></div>
+						<div class="discount l"><span data-msg="bidder discount"></span></div>
+						<div class="status r"><span data-msg="bidder status"></span></div>
+					</div>
+					{{each(i,bid) bids}}
+						<div class="line relative{{if bid.stepIndex==4 && bid.minValue}} minValue{{/if}}" {{if bid.my_bid}}data-bid-me="1"{{/if}} data-bid-id="${bid.id}" data-bid-start="${bid.startTime}" data-bid-end="${bid.endTime}" data-bid-endpause="${bid.endPause}">
+							<div class="relative activeBorder">
+								<div class="clear">
+									<div class="bidder l"><span data-msg="bidder number"></span>{{if !bid.my_bid}}{{if bid.bidderIndex}}${bid.bidderIndex}{{else}}${i+1}{{/if}}{{/if}}</div>
+									<div class="value l">${number_format(bid.value,2,','," ")}</div>
+									<div class="discount l">{{if bid.stepIndex==0}}{{if bid.minValue}}<span data-msg="bidder min value" />{{/if}}{{else}}${number_format(bid.discount,0,'.','')}%{{/if}}</div>
+									<div class="status bidTime r">{{if bid.stepIndex<4}}<div class="timerCounters">{{html bid.bidstep}}</div>{{else bid.stepIndex==4}}{{if bid.minValue}}<span data-msg="bidder min value" />{{else}}<span data-msg="bidder not min value" />{{/if}}{{/if}}</div>
+								</div>
+								{{if bid.stepIndex && bid.stepIndex<4}}<div class="pauseTime" style="display:none;"><div class="name" data-msg="bidder pause"></div><div class="timeLine relative"><div class="inner"><div class="dynamic"></div></div></div></div>{{/if}}
+							</div>
+						</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</script>
+</div>

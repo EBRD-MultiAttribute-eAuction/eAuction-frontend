@@ -1,0 +1,670 @@
+*[data-msg="bid send"]:after {
+	content:"Submit";
+}
+html[lang="ru"] *[data-msg="bid send"]:after {
+	content:"Отправить";
+}
+html[lang="ro"] *[data-msg="bid send"]:after {
+	content:"A depune";
+}
+*[data-msg="Launch Date"]:after {
+	content:"Publication Date";
+}
+html[lang="ru"] *[data-msg="Launch Date"]:after {
+	content:"Дата публикации";
+}
+html[lang="ro"] *[data-msg="Launch Date"]:after {
+	content:"Data publicării";
+}
+*[data-msg="Expected Cost"]:after {
+	content:"Estimated value";
+}
+html[lang="ru"] *[data-msg="Expected Cost"]:after {
+	content:"Оценочная стоимость закупки";
+}
+html[lang="ro"] *[data-msg="Expected Cost"]:after {
+	content:"Valoarea estimată a achiziției";
+}
+*[data-msg="Minimal Step"]:after {
+	content:"Minimum eligible difference";
+}
+html[lang="ru"] *[data-msg="Minimal Step"]:after {
+	content:"Минимальный шаг понижения цены";
+}
+html[lang="ro"] *[data-msg="Minimal Step"]:after {
+	content:"Scop minim de reducere a prețului";
+}
+*[data-msg="Contracting Process ID"]:after {
+	content:"Notice number";
+}
+html[lang="ru"] *[data-msg="Contracting Process ID"]:after {
+	content:"Номер уведомления";
+}
+html[lang="ro"] *[data-msg="Contracting Process ID"]:after {
+	content:"Numărul de notificare";
+}
+*[data-msg="Auction Start Countdown"]:after {
+	content:"Countdown to start";
+}
+html[lang="ru"] *[data-msg="Auction Start Countdown"]:after {
+	content:"Отсчет для запуска";
+}
+html[lang="ro"] *[data-msg="Auction Start Countdown"]:after {
+	content:"Inversă pentru a începe";
+}
+*[data-msg="round title 0"]:after {
+	content:"Initial offers";
+}
+html[lang="ru"] *[data-msg="round title 0"]:after {
+	content:"Первоначальные предложения";
+}
+html[lang="ro"] *[data-msg="round title 0"]:after {
+	content:"Ofertele inițiale";
+}
+*[data-msg="bidder online"]:after {
+	content:"Online";
+}
+html[lang="ru"] *[data-msg="bidder online"]:after {
+	content:"Подключен";
+}
+html[lang="ro"] *[data-msg="bidder online"]:after {
+	content:"Pe net";
+}
+*[data-msg="bidder offline"]:after {
+	content:"Offline";
+}
+html[lang="ru"] *[data-msg="bidder offline"]:after {
+	content:"Не подключен";
+}
+html[lang="ro"] *[data-msg="bidder offline"]:after {
+	content:"Deconectat";
+}
+*[data-msg="round title 1"]:after {
+	content:"Reverse Auction";
+}
+html[lang="ru"] *[data-msg="round title 1"]:after {
+	content:"Реверсивный аукцион";
+}
+html[lang="ro"] *[data-msg="round title 1"]:after {
+	content:"Licitație inversă";
+}
+*[data-msg="round title 4"]:after {
+	content:"Forecast";
+}
+html[lang="ru"] *[data-msg="round title 4"]:after {
+	content:"Прогноз";
+}
+html[lang="ro"] *[data-msg="round title 4"]:after {
+	content:"Perspectivă";
+}
+*[data-msg="bidder form info"]:after {
+	content:"Value of your offer in this round should match minimum eligible difference. ";
+}
+html[lang="ru"] *[data-msg="bidder form info"]:after {
+	content:"Стоимость нового предложения не может превышать разницу между текщим предложением и минимальным шагом: ";
+}
+html[lang="ro"] *[data-msg="bidder form info"]:after {
+	content:"Valoarea ofertei dvs. în această rundă ar trebui să corespundă diferenței minime eligibile.";
+}
+*[data-msg="bid max value"]:after {
+	content:"Max available value: ";
+}
+html[lang="ru"] *[data-msg="bid max value"]:after {
+	content:"Максимально возможное значение: ";
+}
+html[lang="ro"] *[data-msg="bid max value"]:after {
+	content:"Valoare maximă posibilă: ";
+}
+*[data-msg="timer days"]:after {
+	content:"days";
+}
+html[lang="ru"] *[data-msg="timer days"]:after {
+	content:"дн";
+}
+html[lang="ro"] *[data-msg="timer days"]:after {
+	content:"zi";
+}
+*[data-msg="timer hours"]:after {
+	content:"hours";
+}
+html[lang="ru"] *[data-msg="timer hours"]:after {
+	content:"час";
+}
+html[lang="ro"] *[data-msg="timer hours"]:after {
+	content:"ore";
+}
+*[data-msg="timer minutes"]:after {
+	content:"min";
+}
+html[lang="ru"] *[data-msg="timer minutes"]:after {
+	content:"мин";
+}
+html[lang="ro"] *[data-msg="timer minutes"]:after {
+	content:"min";
+}
+*[data-msg="timer seconds"]:after {
+	content:"sec";
+}
+html[lang="ru"] *[data-msg="timer seconds"]:after {
+	content:"сек";
+}
+html[lang="ro"] *[data-msg="timer seconds"]:after {
+	content:"sec";
+}
+*[data-msg="round"]:after {
+	content:"Round ";
+}
+html[lang="ru"] *[data-msg="round"]:after {
+	content:"Раунд ";
+}
+html[lang="ro"] *[data-msg="round"]:after {
+	content:"Rundă ";
+}
+*[data-msg="bidder number"]:after {
+	content:"Tenderer ";
+}
+html[lang="ru"] *[data-msg="bidder number"]:after {
+	content:"Участник ";
+}
+html[lang="ro"] *[data-msg="bidder number"]:after {
+	content:"Participant ";
+}
+*[data-bid-me] *[data-msg="bidder number"]:after {
+	content:"Me";
+}
+html[lang="ru"] *[data-bid-me] *[data-msg="bidder number"]:after {
+	content:"Я";
+}
+html[lang="ro"] *[data-bid-me] *[data-msg="bidder number"]:after {
+	content:"Eu sunt";
+}
+*[data-msg="bidder value"]:after {
+	content:"Current offers";
+}
+html[lang="ru"] *[data-msg="bidder value"]:after {
+	content:"Текущие предложения";
+}
+html[lang="ro"] *[data-msg="bidder value"]:after {
+	content:"Oferte actuale";
+}
+*[data-msg="bidder discount"]:after {
+	content:"Rate of decline";
+}
+html[lang="ru"] *[data-msg="bidder discount"]:after {
+	content:"Уровень снижения";
+}
+html[lang="ro"] *[data-msg="bidder discount"]:after {
+	content:"Rata declinului";
+}
+*[data-msg="bidder status"]:after {
+	content:"Schedule";
+}
+html[lang="ru"] *[data-msg="bidder status"]:after {
+	content:"График";
+}
+html[lang="ro"] *[data-msg="bidder status"]:after {
+	content:"Programa";
+}
+*[data-msg="bidder min value"]:after {
+	content:"lowest price";
+}
+html[lang="ru"] *[data-msg="bidder min value"]:after {
+	content:"низшая цена";
+}
+html[lang="ro"] *[data-msg="bidder min value"]:after {
+	content:"cel mai mic pret";
+}
+.currency_UAH *[data-msg="currency"]:after {
+	content:" UAH";
+}
+.currency_USD *[data-msg="currency"]:after {
+	content:"USD";
+}
+.currency_EUR *[data-msg="currency"]:after {
+	content:"EUR";
+}
+.currency_MDL *[data-msg="currency"]:after {
+	content:"MDL";
+}
+*[data-msg="bid actulize"]:after {
+	content:"Actualize this!";
+}
+*[data-msg="bid max value is small"]:after {
+	content:"Price reduction is not possible";
+}
+html[lang="ru"] *[data-msg="bid max value is small"]:after {
+	content:"Снижение цены невозможно";
+}
+html[lang="ro"] *[data-msg="bid max value is small"]:after {
+	content:"Reducerea prețurilor nu este posibilă";
+}
+*[data-msg="month_0"]:after {
+	content:"January";
+}
+html[lang="ru"] *[data-msg="month_0"]:after {
+	content:"января";
+}
+html[lang="ro"] *[data-msg="month_0"]:after {
+	content:"ianuarie";
+}
+*[data-msg="month_1"]:after {
+	content:"February";
+}
+html[lang="ru"] *[data-msg="month_1"]:after {
+	content:"февраля";
+}
+html[lang="ro"] *[data-msg="month_1"]:after {
+	content:"februarie";
+}
+*[data-msg="month_2"]:after {
+	content:"March";
+}
+html[lang="ru"] *[data-msg="month_2"]:after {
+	content:"марта";
+}
+html[lang="ro"] *[data-msg="month_2"]:after {
+	content:"martie";
+}
+*[data-msg="month_3"]:after {
+	content:"April";
+}
+html[lang="ru"] *[data-msg="month_3"]:after {
+	content:"апреля";
+}
+html[lang="ro"] *[data-msg="month_3"]:after {
+	content:"aprilie";
+}
+*[data-msg="month_4"]:after {
+	content:"May";
+}
+html[lang="ru"] *[data-msg="month_4"]:after {
+	content:"мая";
+}
+html[lang="ro"] *[data-msg="month_4"]:after {
+	content:"mai";
+}
+html[lang="ro"] *[data-msg="month_5"]:after {
+	content:"June";
+}
+html[lang="ru"] *[data-msg="month_5"]:after {
+	content:"июня";
+}
+html[lang="ro"] *[data-msg="month_5"]:after {
+	content:"iunie";
+}
+*[data-msg="month_6"]:after {
+	content:"July";
+}
+html[lang="ru"] *[data-msg="month_6"]:after {
+	content:"июля";
+}
+html[lang="ro"] *[data-msg="month_6"]:after {
+	content:"iulie";
+}
+*[data-msg="month_7"]:after {
+	content:"August";
+}
+html[lang="ru"] *[data-msg="month_7"]:after {
+	content:"августа";
+}
+html[lang="ro"] *[data-msg="month_7"]:after {
+	content:"august";
+}
+*[data-msg="month_8"]:after {
+	content:"September";
+}
+html[lang="ru"] *[data-msg="month_8"]:after {
+	content:"сентября";
+}
+html[lang="ro"] *[data-msg="month_8"]:after {
+	content:"septembrie";
+}
+*[data-msg="month_9"]:after {
+	content:"October";
+}
+html[lang="ru"] *[data-msg="month_9"]:after {
+	content:"октября";
+}
+html[lang="ro"] *[data-msg="month_9"]:after {
+	content:"octombrie";
+}
+*[data-msg="month_10"]:after {
+	content:"November";
+}
+html[lang="ru"] *[data-msg="month_10"]:after {
+	content:"ноября";
+}
+html[lang="ro"] *[data-msg="month_10"]:after {
+	content:"noiembrie";
+}
+*[data-msg="month_11"]:after {
+	content:"December";
+}
+html[lang="ru"] *[data-msg="month_11"]:after {
+	content:"декабря";
+}
+html[lang="ro"] *[data-msg="month_11"]:after {
+	content:"decembrie";
+}
+*[data-msg="bidder pause"]:after {
+	content:"Pause";
+}
+html[lang="ru"] *[data-msg="bidder pause"]:after {
+	content:"Пауза";
+}
+html[lang="ro"] *[data-msg="bidder pause"]:after {
+	content:"Pauză";
+}
+*[data-msg="bidder log"]:after {
+	content:"Log";
+}
+html[lang="ru"] *[data-msg="bidder log"]:after {
+	content:"Лог";
+}
+html[lang="ro"] *[data-msg="bidder log"]:after {
+	content:"Jurnal";
+}
+*[data-msg="bid from IP"]:after {
+	content:"from IP";
+}
+html[lang="ru"] *[data-msg="bid from IP"]:after {
+	content:"c IP";
+}
+html[lang="ro"] *[data-msg="bid from IP"]:after {
+	content:"din IP";
+}
+*[data-msg="bid actual"]:after {
+	content:"Actual offer";
+}
+html[lang="ru"] *[data-msg="bid actual"]:after {
+	content:"Текущее предложение";
+}
+html[lang="ro"] *[data-msg="bid actual"]:after {
+	content:"Ofertă reală";
+}
+*[data-msg="bidder no IP"]:after {
+	content:"bidder no IP";
+}
+*[data-msg="bidder not min value"]:after {
+	content:"";
+}
+
+.bidStep_0 *[data-msg="bidder status"]:after,
+.bidStep_4 *[data-msg="bidder status"]:after {
+	content:"Status";
+}
+html[lang="ru"] .bidStep_0 *[data-msg="bidder status"]:after,
+html[lang="ru"] .bidStep_4 *[data-msg="bidder status"]:after {
+	content:"Статус";
+}
+html[lang="ro"] .bidStep_0 *[data-msg="bidder status"]:after,
+html[lang="ro"] .bidStep_4 *[data-msg="bidder status"]:after {
+	content:"Status";
+}
+
+.auctionStatus_pending .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Auction pending...';
+}
+html[lang="ru"] .auctionStatus_pending .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Ожидается аукцион...';
+}
+html[lang="ro"] .auctionStatus_pending .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Licitație așteptată...';
+}
+.auctionStatus_live .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Auction in progress';
+}
+html[lang="ru"] .auctionStatus_live .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Идет аукцион';
+}
+html[lang="ro"] .auctionStatus_live .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Licitația este în desfășurare';
+}
+.auctionStatus_complete .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Auction Complete';
+}
+html[lang="ru"] .auctionStatus_complete .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Аукцион завершен';
+}
+html[lang="ro"] .auctionStatus_complete .mainInfo .auctionStatus *[data-msg]:after{
+	content:'Licitația sa terminat';
+}
+.bidSteps[data-round-status="pending.active"] .roundTimeline *[data-msg="round status"]:after,
+.bidSteps[data-round-status="pending"] .roundTimeline *[data-msg="round status"]:after {
+	content:'Pending';
+}
+html[lang="ru"] .bidSteps[data-round-status="pending.active"] .roundTimeline *[data-msg="round status"]:after,
+html[lang="ru"] .bidSteps[data-round-status="pending"] .roundTimeline *[data-msg="round status"]:after {
+	content:'В ожидании';
+}
+html[lang="ro"] .bidSteps[data-round-status="pending.active"] .roundTimeline *[data-msg="round status"]:after,
+html[lang="ro"] .bidSteps[data-round-status="pending"] .roundTimeline *[data-msg="round status"]:after {
+	content:'In asteptarea';
+}
+
+.bidSteps.bidStep_4[data-round-status="pending.active"] .roundTimeline *[data-msg="round status"]:after {
+	content:'Calculating';
+}
+html[lang="ru"] .bidSteps.bidStep_4[data-round-status="pending.active"] .roundTimeline *[data-msg="round status"]:after {
+	content:'Вычисление';
+}
+html[lang="ro"] .bidSteps.bidStep_4[data-round-status="pending.active"] .roundTimeline *[data-msg="round status"]:after {
+	content:'Calculat';
+}
+.bidSteps[data-round-status="live"] .roundTimeline *[data-msg="round status"]:after {
+	content:'Live';
+}
+html[lang="ru"] .bidSteps[data-round-status="live"] .roundTimeline *[data-msg="round status"]:after {
+	content:'В процессе';
+}
+html[lang="ro"] .bidSteps[data-round-status="live"] .roundTimeline *[data-msg="round status"]:after {
+	content:'În progres';
+}
+.bidSteps[data-round-status="complete"] .roundTimeline *[data-msg="round status"]:after {
+	content:'Completed';
+}
+html[lang="ru"] .bidSteps[data-round-status="complete"] .roundTimeline *[data-msg="round status"]:after {
+	content:'Завершен';
+}
+html[lang="ro"] .bidSteps[data-round-status="complete"] .roundTimeline *[data-msg="round status"]:after {
+	content:'Este completat';
+}
+.bidSteps[data-round-status="complete"] *[data-msg="round title 4"]:after {
+	content:"Auction Result";
+}
+html[lang="ru"] .bidSteps[data-round-status="complete"] *[data-msg="round title 4"]:after {
+	content:"Результат аукциона";
+}
+html[lang="ro"] .bidSteps[data-round-status="complete"] *[data-msg="round title 4"]:after {
+	content:"Rezultatul licitației";
+}
+.bidSteps.bidStep_4 *[data-msg="bidder min value"]:after {
+	content:"Possible winner";
+}
+html[lang="ru"] .bidSteps.bidStep_4 *[data-msg="bidder min value"]:after {
+	content:"Возможный победитель";
+}
+html[lang="ro"] .bidSteps.bidStep_4 *[data-msg="bidder min value"]:after {
+	content:"Câștigător posibil";
+}
+.bidSteps.bidStep_4[data-round-status="complete"] *[data-msg="bidder min value"]:after {
+	content:"Winner";
+}
+html[lang="ru"] .bidSteps.bidStep_4[data-round-status="complete"] *[data-msg="bidder min value"]:after {
+	content:"Победитель";
+}
+html[lang="ro"] .bidSteps.bidStep_4[data-round-status="complete"] *[data-msg="bidder min value"]:after {
+	content:"Câștigător";
+}
+.bidSteps.bidStep_4[data-round-status="complete"] *[data-msg="bidder not min value"]:after {
+	content:"Participant";
+}
+html[lang="ru"] .bidSteps.bidStep_4[data-round-status="complete"] *[data-msg="bidder not min value"]:after {
+	content:"Участник";
+}
+html[lang="ro"] .bidSteps.bidStep_4[data-round-status="complete"] *[data-msg="bidder not min value"]:after {
+	content:"Participant";
+}
+.bidSteps.bidStep_4[data-round-status="complete"] .bidTime:before {
+	content:'';
+}
+.bidSteps[data-round-status="complete"] .bidTime:before,
+.bidSteps[data-round-status="live"] .bid_complete .bidTime:before {
+	content:'';
+}
+
+*[data-msg="lang ro"]:after {
+	content:"RO";
+}
+*[data-msg="lang ru"]:after {
+	content:"РУ";
+}
+*[data-msg="lang en"]:after {
+	content:"EN";
+}
+
+*[data-msg="bidder name"]:after {
+	content:" ";
+}
+
+*[data-msg="auction no found"]:after {
+	content:"Auction no found";
+}
+html[lang="ru"] *[data-msg="auction no found"]:after {
+	content:"Аукцион не найден";
+}
+html[lang="ro"] *[data-msg="auction no found"]:after {
+	content:"Licitația nu a fost găsită";
+}
+
+*[data-msg="jAlert OK"]:after {
+	content:"OK";
+}
+html[lang="ru"] *[data-msg="jAlert OK"]:after {
+	content:"Далее";
+}
+html[lang="ro"] *[data-msg="jAlert OK"]:after {
+	content:"Mai departe";
+}
+*[data-msg="jAlert cancel"]:after {
+	content:"Cancel";
+}
+html[lang="ru"] *[data-msg="jAlert cancel"]:after {
+	content:"Отменить";
+}
+html[lang="ro"] *[data-msg="jAlert cancel"]:after {
+	content:"Anula";
+}
+
+*[data-msg="error value"]:after {
+	content:"Invalid value received";
+}
+html[lang="ru"] *[data-msg="error value"]:after {
+	content:"Неверное значение";
+}
+html[lang="ro"] *[data-msg="error value"]:after {
+	content:"Valoare nevalidă primită";
+}
+*[data-msg="error time is end"]:after {
+	content:"Time slot has been expired";
+}
+html[lang="ru"] *[data-msg="error time is end"]:after {
+	content:"Временной интервал истек";
+}
+html[lang="ro"] *[data-msg="error time is end"]:after {
+	content:"Fusul de timp a expirat";
+}
+*[data-msg="auction enter bidder"]:after {
+	content:"You are logged in as a bidder";
+}
+html[lang="ru"] *[data-msg="auction enter bidder"]:after {
+	content:"Вы вошли как участник торгов";
+}
+html[lang="ro"] *[data-msg="auction enter bidder"]:after {
+	content:"Sunteți conectat (ă) ca ofertant";
+}
+*[data-msg="auction enter wrong bidder"]:after {
+	content:"An attempt to enter an auction by an unauthorized participant.";
+}
+html[lang="ru"] *[data-msg="auction enter wrong bidder"]:after {
+	content:"Попытка входа в аукцион неавторизованным участником";
+}
+html[lang="ro"] *[data-msg="auction enter wrong bidder"]:after {
+	content:"Încercați să introduceți o licitație de la un ofertant neautorizat";
+}
+*[data-msg="auction enter guest"]:after {
+	content:"You entered the auction as an observer";
+}
+html[lang="ru"] *[data-msg="auction enter guest"]:after {
+	content:"Вы вошли в аукцион как наблюдатель";
+}
+html[lang="ro"] *[data-msg="auction enter guest"]:after {
+	content:"Ați intrat în licitație în calitate de observator";
+}
+
+html *[data-msg="bid error format"]:after {
+	content:"bid error format";
+}
+
+html[lang="ro"] *[data-msg="bid error empty"]:after {
+	content:"Introduceţi valoarea ofertei în acest câmp";
+}
+html[lang="ru"] *[data-msg="bid error empty"]:after {
+	content:"Заполните поле для ввода стоимости предложения.";
+}
+html[lang="en"] *[data-msg="bid error empty"]:after {
+	content:"Fill in the field for entering the cost of the bid";
+}
+
+html[lang="ro"] *[data-msg="bid error zerro"]:after {
+	content:"Valoarea ofertei dvs. trebuie să fie mai mare decât 0.";
+}
+html[lang="ru"] *[data-msg="bid error zerro"]:after {
+	content:"Стоимость Вашего предложения должна быть больше 0.";
+}
+html[lang="en"] *[data-msg="bid error zerro"]:after {
+	content:"Your bid cost must be greater than 0";
+}
+
+html[lang="ro"] *[data-msg="bid error same"]:after {
+	content:"Oferta dvs. nu poate fi egală cu cea actuală.";
+}
+html[lang="ru"] *[data-msg="bid error same"]:after {
+	content:"Ваше предложение не может быть равно текущему.";
+}
+html[lang="en"] *[data-msg="bid error same"]:after {
+	content:"Your bid cannot be equal the current one";
+}
+
+html[lang="ro"] *[data-msg="bid error max"]:after {
+	content:"Valoarea ofertei dvs. depășește valoarea maximă admisibilă. Valoarea maximă admisibilă a propunerii în runda curentă: ";
+}
+html[lang="ru"] *[data-msg="bid error max"]:after {
+	content:"Стоимость Вашего предложения превышает максимально допустимую. Максимально допустимая стоимость предложения в текущем раунде: ";
+}
+html[lang="en"] *[data-msg="bid error max"]:after {
+	content:"Your bid cost exceeds the allowable one. The allowable maximum in this round is: ";
+}
+
+*[data-msg="conection error"]:after {
+	content:'AHTUNG!!! Conection Error!!!';
+}
+html[lang="ro"] *[data-msg="conection error"]:after {
+	content:"Сonexiunea cu rețea a fost pierdută! Contactați administratorul de sistem pentru a restabili accesul la Internet! După reconectarea la Internet, reîncărcați pagina.";
+}
+html[lang="ru"] *[data-msg="conection error"]:after {
+	content:"Пропало подключение к сети! Обратитесь к Вашему системному администратору для возобновления доступа в интернет! После подключения к интернету перезагрузите страницу.";
+}
+html[lang="en"] *[data-msg="conection error"]:after {
+	content:"Internet connection lost! Contact your system administrator to restore the Internet connection! After connection to the Internet reload the page.";
+}
+
+html[lang="ro"] *[data-msg="bid error 403.101"]:after {
+	content:"Timpul de ofertă s-a terminat. [403.101]";
+}
+html[lang="ru"] *[data-msg="bid error 403.101"]:after {
+	content:"Время для подачи ставки истекло. [403.101]";
+}
+html[lang="en"] *[data-msg="bid error 403.101"]:after {
+	content:"Bid time was up. [403.101]";
+}

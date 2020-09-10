@@ -1,0 +1,37 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.php
+
+Options -Indexes
+Options +FollowSymlinks
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/index\.php$
+RewriteRule .* /? [R=301,L]
+
+RewriteCond %{THE_REQUEST} //
+RewriteRule .* $0 [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/(images|css|js|files)(/.*$|$)
+RewriteRule .* - [L]
+
+#RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{REQUEST_URI} ^/auctions/ocds-.+$
+RewriteCond %{REQUEST_URI} !^/auctions/ocds-.+/index.json$
+RewriteRule .* /tpl/view.htm [L]
+
+#RewriteCond %{REQUEST_METHOD} VIEW
+
+#ocds/prefix/UA/151/18/63200123456-xx/lot/index.json
+RewriteCond %{REQUEST_URI} ^/auctions/ocds-([^\-]+)-([^\-]+)-([0-9]{3})([0-9]{2})([0-9]{8,11}(-.{2})?)/([^/]+)/index.json$
+RewriteCond %{DOCUMENT_ROOT}/auctions/ocds/%1/%2/%3/%4/%5/%7/index.json -f
+RewriteRule .* /auctions/ocds/%1/%2/%3/%4/%5/%7/index.json [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.*)\.php$
+RewriteCond %{REQUEST_URI} !^/$
+RewriteRule ^.*$ / [L]
